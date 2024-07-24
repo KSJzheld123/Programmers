@@ -9,7 +9,6 @@ class Solution {
                 }
             }
         }
-
         for(int i = 0; i < list.length; i++) {
             answer[i] = list[i] + 1;
         }
