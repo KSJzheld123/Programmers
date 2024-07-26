@@ -14,6 +14,7 @@ class Solution {
             answer[i] = list[i] + 1;
         }
 
+
         return answer;
     }
 }
