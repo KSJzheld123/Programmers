@@ -1,20 +1,16 @@
 class Solution {
-    public int[] solution(int[] emergency) {
-        int[] answer = new int[emergency.length];
-        int[] list = new int[emergency.length];
-        for(int i = 0; i < emergency.length; i++) {
-            for(int j = 0; j < emergency.length; j++) {
-                if(emergency[i] < emergency[j]) {
-                    list[i] += 1;
-                }
+    public int solution(int n) {
+        int answer = 1;
+        int count = 1;
+
+        while (true) {
+            answer = answer * count;
+            if(answer == n) {
+                return count;
+            } if(answer > n) {
+                return count = count - 1;
             }
+            count++;
         }
-
-        for(int i = 0; i < list.length; i++) {
-            answer[i] = list[i] + 1;
-        }
-
-
-        return answer;
     }
 }
