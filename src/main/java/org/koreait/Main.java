@@ -12,7 +12,6 @@ class Solution {
         numbers = numbers.replaceAll("seven", "7");
         numbers = numbers.replaceAll("eight", "8");
         numbers = numbers.replaceAll("nine", "9");
-
         answer = Long.parseLong(numbers);
 
         return answer;
